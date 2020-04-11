@@ -1,5 +1,6 @@
 body{
 	background-color: tomato;
+	margin-right:-10px;
 }
 .home{
 	display: flex;
