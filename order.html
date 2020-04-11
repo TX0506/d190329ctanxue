@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="order.css">
+</head>
+<body>
+<h1 style="text-align: center;">Order Form</h1>
+<script>
+	function name(uname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(uname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('Username must have alphabet characters only');
+uname.focus();
+return false;
+}
+}function phone(){
+var input = $('[type=tel]')
+    input.mobilePhoneNumber({allowPhoneWithoutPrefix: '+1'});
+    input.bind('country.mobilePhoneNumber', function(e, country) {
+      $('.country').text(country || '')
+    })
+}function add(){
+var uadd = document.getElementById('add');
+var add = uadd.value.length;
+if(add === 0){
+alert('Pls fill in this is required column');
+return false;
+}else{
+return true;
+}	
+}function order(){
+	var o =document.getElementById('order');
+	var oo =o.value.length;
+	if(oo == 0){
+		alert(Pls choose the required)
+		return false;
+	}else{
+		return true;
+	}else
+{
+alert('Form Succesfully Submitted');
+window.location.reload()
+return true;
+}
+}
+</script>
+<div>
+	<form>
+		<p class="first">
+		<label><b>Name:</b></label><br>
+		<input type="text" name="name" id="name" placeholder="Write Your Full Name" required><br><br>
+        <label><b>Mobile Phone:</b></label><br>
+		<input type="text" name="mobile" placeholder="xxx-xxxxxxx" required><br><br>
+		<label><b>Address:</b></label><br>
+		<input type="text" name="address" id="add" placeholder="Address" required><br><br>
+        <label><b>Order:</b></label>
+        <table>
+			<th>Type</th><br>
+			<th>Quantity</th><br>
+			<th>Size</th><br>
+			<tr>
+				<td>
+					<input type="checkbox" name="bs" value="bs" checked /><span>Blazing Seafood</span><br>
+                    <input type="checkbox" name="cs" value="cs" checked  /><span>Chicken Supreme</span><br>
+                    <input type="checkbox" name="hs" value="hs" checked  /><span>Hawaiian Supreme</span><br>
+                    <input type="checkbox" name="is" value="is" checked /><span>Island Supreme</span><br>
+                    <input type="checkbox" name="ss" value="ss" checked  /><span>Super Supreme</span><br>
+                    <input type="checkbox" name="tc" value="tc" checked  /><span>Triple Chicken</span><br>
+                    <input type="checkbox" name="ac" value="ac" checked /><span>Aloha Chicken</span><br>
+                    <input type="checkbox" name="bp" value="bp" checked  /><span>Beef Pepperoni</span><br>
+                    <input type="checkbox" name="cd" value="cd" checked  /><span>Chicken Delight</span><br>
+                    <input type="checkbox" name="cs" value="cs" checked /><span>Chicken Sensation</span><br>
+                    <input type="checkbox" name="cp" value="cp" checked  /><span>Chicken Pepperoni</span><br>
+                    <input type="checkbox" name="dc" value="dc" checked  /><span>Deluxe Cheese</span><br>
+                    <input type="checkbox" name="hc" value="hc" checked /><span>Hawaiian Chicken</span><br>
+                    <input type="checkbox" name="it" value="it" checked  /><span>Island Tuna</span><br>
+                    <input type="checkbox" name="vl" value="vl" checked  /><span>Veggie Lover</span><br>
+				</td>
+				<td>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+					<input type="text" name="number" id="number" placeholder="The quantity you want to order" required><br>
+				</td>
+				<td>
+					<input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+		            <input type="radio" name="size"><label for="size">Large</label>
+		            <input type="radio" name="size"><label for="size">Medium</label>
+		            <input type="radio" name="size"><label for="size">Small</label><br>
+				</td>
+			</tr>
+		</table><br>
+	</p>
+	</form><br>
+	<input style="margin-left:100px; font-size: 40px;" type="submit" class="button" onclick="formValidation()" value="Confirm">
+</div>
+</body>
+</html>

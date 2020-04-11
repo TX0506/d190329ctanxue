@@ -1,0 +1,17 @@
+body{
+	background-color: tomato;
+}
+.home{
+	display: flex;
+	flex-direction: column;
+	font-size: 50px;
+	margin-top: 20px;
+	position: absolute;
+}
+.first{
+	font-size: 30px;
+}
+.second{
+	text-align: right;
+	font-size: 30px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="en">
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="ass.css">
+</head>
+<body>
+<div class="all">
+	<div class="first">
+		<strong>Online SUC Form</strong>
+	</div>
+	<p class="long">
+		<strong><em>!!Note:<br>
+  		You must fill  complete in the all following questions,you will get an error.</em></strong>
+	</p>
+</div><br>
+<form name="registration" action="#" method="post" onsubmit="return formValidation();">
+	<div class="second">
+		<h2><strong>Personal Information</strong></h2><br>
+		<p class="choose">
+		<label for="name">Student Name:</label></br>
+  		<input type="text" name="name" placeholder="Name" required>
+		</p>
+		<div class="choose">
+		<label for="id">Student ID:</label></br>
+  		<input type="text" name="id" placeholder="ID" required>
+		</div>
+		<div id="idError"></div><br>
+		<div class="choose">Gender:</br>
+		<input type="radio" name="gender"><label for="female">Female</label>
+		<input type="radio" name="gender"><label for="male">Male</label>
+		</div><br>
+		<div class="choose" ><label for="IC">IC.No:</label><br>
+		<input type="IC" name="IC" placeholder="000000-00-0000" required="">
+		</div><br>
+		<div class="choose">Race:<br>
+		<input type="radio" name="race"><label for="race">Chinese</label>
+		<input type="radio" name="race"><label for="race">Malay</label>
+		<input type="radio" name="race"><label for="race">Indian</label>
+		</div><br>
+		<div class="choose">Mobile Phone:<br>
+		<input type="text" name="mobile" placeholder="xxx-xxxxxxx" required>
+		</div><br>
+		<div class="choose">Address:<br>
+		<input type="text" name="address" placeholder="Address" required>
+		</div><br>
+		<div class="choose">E-mail:<br>
+		<input type="text" name="email" placeholder="E-mail">
+		</div><br>
+		<div class="choose">Department:<br>
+		<input type="text" name="department" placeholder="Department" required>
+		</div><br>
+		<div class="choose">Certificate<br>
+		<select required>
+	    <option>SPM</option>
+		<option>A-level</option>
+		<option>STPM</option>
+		<option>O-level</option>
+		</select> 
+		</div><br>
+		<div class="choose">
+        <label>Language:</label><br>
+        <div class="we">
+        (*The language you learn in your middle school,please select)
+        (*Can choose multiple options)
+        </div>
+        <input type="checkbox" name="en" value="en" checked /><span>English</span><br>
+        <input type="checkbox" name="zh-CH" value="zh-CH" checked  /><span>Chinese</span><br>
+        <input type="checkbox" name="malay" value="malay" checked  /><span>Malay</span>
+        </div><br>
+	</div>
+</form>
+<input  style="margin-bottom: 20px; margin-top: 800px;margin-left:100px; ; font-size: 30px;" type="submit" name="submit" value="Submit" class="submit" onclick="formValidation()"/>
+<script src="ass.js"></script>
+</body>
+</html>
